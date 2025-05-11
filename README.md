@@ -1,30 +1,24 @@
-# Hi, I'm Jibril – Smart Contract Developer
+# TimeLockedWallet
 
-**@0x_Jibr33lu on X | Solidity | Rust | EVM | Blockchain Security | Airdrop Hunter**
+A basic smart contract wallet that locks Ether until a specified future timestamp.
 
-I'm a passionate smart contract developer focused on building secure and scalable decentralized applications. I work primarily with **Solidity** and **Rust**, contributing to projects across Ethereum, Layer 2 networks, and custom blockchains.
-
----
+## Overview
+- Stores ETH securely
+- Funds can only be withdrawn by the owner after the unlock time
+- Useful for savings, vesting, or timed payouts
 
 ## Tech Stack
+- Solidity ^0.8.0
+- Hardhat (recommended)
 
-- **Languages**: Solidity, Rust, TypeScript, JavaScript
-- **Blockchains**: Ethereum, Arbitrum, Optimism, Polygon, Solana (basic)
-- **Tools**: Hardhat, Foundry, Remix, Truffle, Metamask, Viem, Wagmi
-- **Security**: Audit practices, Gas optimization, Reentrancy protection
-- **Others**: Git, GitHub Actions, Ethers.js, Web3.js, IPFS, Chainlink
+## How It Works
+1. Deploy with an `unlockTime` (Unix timestamp in the future)
+2. Send ETH to the contract
+3. Only the deployer (owner) can withdraw after the unlock time
 
----
+## How to Run
 
-## Projects
-
-
-## Let's Connect
-
-- **X (Twitter)**: [@0x_Jibr33lu](https://x.com/0x_Jibr33lu)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- **Portfolio**: [Your personal website or Notion](https://your-site.com)
-
----
-
-*Always building. Always shipping.*
+### 1. Clone the repo
+```bash
+git clone https://github.com/yourusername/TimeLockedWallet.git
+cd TimeLockedWallet
